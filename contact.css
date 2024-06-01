@@ -70,7 +70,7 @@ input[type="submit"]{
     color: white;
     font-size: 17px;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 6px;
 
 }
 
@@ -88,14 +88,14 @@ input[type="submit"]{
 }
 
 .container {
-    width: 1%; /* Adjust width as needed */
+    width: 1%; 
     margin: 0 auto;
     padding: 20px;
-    background-color: #f0f0f0; /* Background color of the card */
-    border: 1px solid #ccc; /* Border color */
-    border-radius: 8px; /* Border radius for rounded corners */
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
 }
-/* Custom checkbox style */
+
 .custom-checkbox {
     display: inline-block;
     position: relative;
@@ -115,8 +115,8 @@ input[type="submit"]{
     left: 0;
     height: 15px;
     width: 15px;
-    background-color: transparent; /* Transparent background */
-    border: 2px solid pink; /* Pink border */
+    background-color: transparent;
+    border: 2px solid pink;
     border-radius: 7px;
 }
 .checkmark:after {
@@ -136,6 +136,3 @@ input[type="submit"]{
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
-
-
-
