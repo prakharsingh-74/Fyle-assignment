@@ -63,14 +63,14 @@ textarea::-webkit-scrollbar-thumb{
 
 input[type="submit"]{
     margin-top: 5px;
-    margin-left: 35%;
+    margin-left: 2.5px;
     width: 120px;
     max-width: 200px;
     background: linear-gradient(to right, rgb(255,0,106), rgb(255,67,61));
     color: white;
     font-size: 17px;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: 10px;
 
 }
 

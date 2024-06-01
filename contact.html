@@ -7,32 +7,36 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-        <div class="overlay">
-            <form onsubmit="event.preventDefault(); validateform">
-                <h1>Talk to Us</h1>
-    
-                <label for="work-email"></label>
-                <input type="text" id="work-email" placeholder="work-email*">
+    <div class="overlay">
+        <form>
+            <h1>Talk to Us</h1>
+
+            <label for="work-email"></label>
+            <input type="text" id="work-email" placeholder="work-email*">
+            <small class="error"></small>
+
+            <label for="first-name"></label>
+            <input type="text" id="first-name" placeholder="first name*">
+            <small class="error"></small>
+
+            <label for="last-name"></label>
+            <input type="text" id="last-name" placeholder="last name*">
+            <small class="error"></small>
+
+            <label class="custom-checkbox">
+                I Agree to Fyle Terms and Conditions, and provide consent to send me communication.
+                <input type="checkbox">
+                <span class="checkmark"></span>
                 <small class="error"></small>
-    
-                <label for="first-name"></label>
-                <input type="text" id="first-name" placeholder="first name*">
-                <small class="error"></small>
-    
-                <label for="last-name"></label>
-                <input type="text" id="last-name" placeholder="last name*">
-                <small class="error"></small>
-    
-                <label class="custom-checkbox">I Agree to Fyle Terms and Conditions, and provide consent to send me communication.
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-    
-                <div class="center">
-                    <input type="submit" value="Contact us">
-                    <p id="success"></p>
-                </div>
-            </form>
-        </div>
-    </body>
-    </html>
+            </label>
+
+            <div class="centre">
+                <input type="submit" value="Contact us">
+                <p id="success"></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>
