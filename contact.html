@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="overlay">
+        <form onsubmit="event.preventDefault(); validateform">
+            <h1>Talk to Us</h1>
+
+            <label for="work-email"Work Email:</label>
+            <input type="text" id="work-email" placeholder="work-email">
+            <small class="error"></small>
+
+            <label for="first name"first name:</label>
+            <input type="text" id="first name" placeholder="first name">
+            <small class="error"></small>
+
+            <label for="last name"Work Email:</label>
+            <input type="text" id="last name" placeholder="last name">
+            <small class="error"></small>
+
+            <div class="centre"></div>
+               <input type="submit" value="Send Message"
+               <p id="success"></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
