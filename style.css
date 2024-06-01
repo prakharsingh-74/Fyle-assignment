@@ -81,7 +81,39 @@ body {
 .services {
     padding: 10rem 9%;
     text-align: center;
+    background-color: rgb(244, 244, 245);
 }
+
+.services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.services-for-you {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.services-for-you h3 {
+    margin: 1px 0; /* Add margin for spacing */
+}
+
+.paragraph {
+    align-self: flex-end;
+    width: 53%; /* Adjust width as needed */
+    text-align: right;
+    margin-top: 0px;
+}
+
+.paragraph p {
+    margin: 0;
+}
+
 
 .services-content h2 {
     font-size: 2.4rem;
@@ -115,12 +147,12 @@ body {
 .slides {
     display: flex;
     width: 400%;
-    animation: slide 16s infinite;
+    animation: slide 12s infinite; /* Adjust the total animation duration */
 }
 
 .slide {
     width: 25%;
-    transition: transform 0.5s ease;
+    transition: transform 1.2s ease;
     padding: 0 1rem; /* Add some padding to give space between images */
 }
 
@@ -134,13 +166,9 @@ body {
 }
 
 @keyframes slide {
-    0% { transform: translateX(0%); }
-    20% { transform: translateX(0%); }
-    25% { transform: translateX(-100%); }
-    45% { transform: translateX(-100%); }
-    50% { transform: translateX(-200%); }
-    70% { transform: translateX(-200%); }
-    75% { transform: translateX(-300%); }
-    95% { transform: translateX(-300%); }
-    100% { transform: translateX(0%); }
+    0%, 20% { transform: translateX(0%); }
+    25%, 45% { transform: translateX(-100%); }
+    50%, 70% { transform: translateX(-200%); }
+    75%, 95% { transform: translateX(-300%); }
+    100% { transform: translateX(-300%); }
 }
