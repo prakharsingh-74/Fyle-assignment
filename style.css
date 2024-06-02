@@ -104,56 +104,148 @@ body {
     color: #666;
 }
 
-.services {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
+.left-section {
+    max-width: 60%;
 }
 
-.service {
-    flex: 1 1 22%;
+.left-section h2 {
+    color: #f00;
+    margin-right: 270px;
+    font-size: 32px;
+}
+
+.left-section h3 {
     margin: 10px;
+    margin-right: 100px;
+    font-size: 28px;
 }
 
-.service img {
+.left-section p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.right-section {
+    padding-left: 570px;
+}
+
+.left-section p, .right-section p {
+    font-size: 15px;
+}
+
+.slider {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.cards {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+.card {
+    min-width: 300px; /* Width of each card */
+    height: 400px; /* Height of each card */
+    perspective: 1000px;
+    flex-shrink: 0;
+}
+
+.card-inner {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
 }
 
-.service-content {
-    background-color: #ff4d4d;
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
-    padding: 20px;
     text-align: center;
-    height: 384px; /* Set the desired height here */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-front {
+    background-color: #bbb;
+}
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-back {
+    background-color: #f00;
+    transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.service-content h3 {
-    font-size: 24px;
+.card-content {
+    color: white;
+}
+
+.card-content h4 {
     margin-bottom: 10px;
+    font-size: 24px;
 }
 
-.service-content p {
-    font-size: 16px;
+.card-content p {
     margin-bottom: 20px;
 }
 
-.service-content a {
+.read-more {
     color: white;
     text-decoration: none;
     border: 1px solid white;
     padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.service-content a:hover {
+.read-more:hover {
     background-color: white;
-    color: #ff4d4d;
+    color: #f00;
+}
+
+.dots {
+    text-align: center;
+    bottom: 15px;
+    width: 100%;
+}
+
+.dot {
+    height: 13px;
+    width: 13px;
+    margin: 25px 5px;
+    background-color: #bdbdbd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #f00;
 }
 
 .why-choosing-us {
