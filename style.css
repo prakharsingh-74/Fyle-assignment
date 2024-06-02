@@ -78,99 +78,82 @@ body {
     border-radius: .5rem;
 }
 
-.services {
-    padding: 10rem 9%;
-    text-align: center;
-    background-color: rgb(244, 244, 245);
-}
-
-.services-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.services-for-you {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.services-for-you h3 {
-    margin: 1px 0;
-}
-
-.paragraph {
-    align-self: flex-end;
-    width: 53%; 
-    text-align: right;
-    margin-top: 0px;
-}
-
-.paragraph p {
-    margin: 0;
-}
-
-
-.services-content h2 {
-    font-size: 2.4rem;
-    color: var(--main-color);
-    margin-left: -78rem;
-}
-
-.services-content h3 {
-    font-size: 4rem;
-    font-weight: 700;
-    margin-left: -57rem;
-}
-
-.foryou h3{
-    margin-left: -76rem;
-}
-
-.services-content p {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-}
-
-.slider {
-    overflow: hidden;
-    width: 100%;
+.container {
     max-width: 1200px;
     margin: 0 auto;
-    position: relative;
+    padding: 20px;
 }
 
-.slides {
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header h2 {
+    color: #ff0000;
+    font-size: 24px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.header p {
+    font-size: 16px;
+    color: #666;
+}
+
+.services {
     display: flex;
-    width: 400%;
-    animation: slide 12s infinite;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.slide {
-    width: 25%;
-    transition: transform 1.2s ease;
-    padding: 0 1rem; 
+.service {
+    flex: 1 1 22%;
+    margin: 10px;
 }
 
-.slide img {
+.service img {
     width: 100%;
     height: auto;
-    max-width: 300px; 
-    max-height: 400px;
-    margin: 0 auto; 
-    border-radius: .5rem;
+    display: block;
 }
 
-@keyframes slide {
-    0%, 20% { transform: translateX(0%); }
-    25%, 45% { transform: translateX(-100%); }
-    50%, 70% { transform: translateX(-200%); }
-    75%, 95% { transform: translateX(-300%); }
-    100% { transform: translateX(-300%); }
+.service-content {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 384px; /* Set the desired height here */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.service-content a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.service-content a:hover {
+    background-color: white;
+    color: #ff4d4d;
 }
 
 .why-choosing-us {

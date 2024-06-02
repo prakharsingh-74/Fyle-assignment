@@ -63,13 +63,29 @@ document.addEventListener("DOMContentLoaded", () => {
             checkboxError.textContent = "";
         }
 
-        // Show success message if form is valid
+        // Show success message if form is valid and send data to API
         if (isValid) {
+            // Collect form data
+            const formData = {
+                email: email,
+                firstName: firstName,
+                lastName: lastName,
+                agreedToTerms: checkboxInput.checked
+            };
+
+            // Send the data to the endpoint
+            fetch("https://getform.io/f/ebpdkkpb", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formData)
+            });
+
+            // Show success message
             successMessage.textContent = "Form submitted successfully!";
             successMessage.style.color = "#28a745";
             form.reset();
-        } else {
-            successMessage.textContent = "";
         }
     });
 });
